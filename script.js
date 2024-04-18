@@ -8,3 +8,30 @@ function changeAllArticleColors() {
     }
 }
 changeAllArticleColors();
+
+function attachBuyEvents() {
+    const mainGoal = document.getElementById('products').querySelectorAll('button');
+    mainGoal.forEach(button => {
+        button.addEventListener('click', function(e) {
+            console.log(e.currentTarget);
+
+        });
+
+    });
+
+}
+attachBuyEvents();
+
+function againAttachBuyEvents() {
+    const mainGoal = document.getElementById('products').querySelectorAll('button');
+    mainGoal.forEach(button => {
+        button.addEventListener('click', function(e) {
+            console.log(button.parentNode);
+            button.parentNode.classList.toggle('sale');
+        });
+    });
+
+
+
+}
+againAttachBuyEvents();

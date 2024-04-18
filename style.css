@@ -24,7 +24,7 @@
         }
         
         .sale {
-            background-color: aqua!important;
+            background-color: aqua;
         }
         
         #products article .price::after {
